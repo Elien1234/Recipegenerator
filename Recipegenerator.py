@@ -24,7 +24,7 @@ st.set_page_config(
 # Function to calculate macronutrients with OpenAI
 def calculate_macronutrients_with_ai(recipe_text):
     prompt = (
-        f"The following recipe needs macronutrient analysis (protein, fat, carbohydrates, and total calories) per ingredient, and totals for all. Ensure measurements are in grams (European metric standard):\n\n"
+        f"The following recipe needs macronutrient analysis (protein, fat, carbohydrates, and total calories) per ingredient, and totals for all. Dont add additional text. Ensure measurements are in grams (European metric standard):\n\n"
         f"{recipe_text}\n\n"
         f"Provide a table with columns: Ingredient, Protein (g), Fat (g), Carbohydrates (g), and Calories (kcal). Include totals in the last row."
     )
