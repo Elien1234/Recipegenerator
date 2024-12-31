@@ -66,7 +66,7 @@ def generate_recipe_with_ai(cuisine, meal_type, calories, ingredients, protein_g
         return "Error generating recipe."
 
 # Streamlit UI
-st.title("🍔🍟 Hot Girls Plan Meals")
+st.title("🍒 Hot Girls Plan Meals 🍑")
 st.write("Generate recAIpes tailored to your preferences and calorie goals!")
 
 # Input fields
