@@ -70,7 +70,7 @@ protein_grams = st.slider("Minimum Protein (g)", 0, 100, 20)
 ingredients = st.text_input("Ingredients to Include (comma-separated)").split(",")
 
 # Generate recipe
-if st.button("Generate Recipe"):
+if st.button("Generate Recipe 🪄"):
     ai_recipe = generate_recipe_with_ai(cuisine, meal_type, calories, ingredients, protein_grams)
     if "Error" not in ai_recipe:
         st.subheader("AI-Generated Recipe")
