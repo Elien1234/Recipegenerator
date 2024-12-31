@@ -59,8 +59,8 @@ def generate_recipe_with_ai(cuisine, meal_type, calories, ingredients, protein_g
         return "Error generating recipe."
 
 # Streamlit UI
-st.title("AI-Powered Recipe Generator")
-st.write("Generate recipes tailored to your preferences and calorie goals!")
+st.title("🍭 Hot Girls Plan Meals")
+st.write("Generate recAIpes tailored to your preferences and calorie goals!")
 
 # Input fields
 cuisine = st.selectbox("Preferred Cuisine", ["Any", "Italian", "Indian", "Mexican", "Asian", "Dutch", "Belgian", "American", "Greek", "Turkish", "Spanish"])
