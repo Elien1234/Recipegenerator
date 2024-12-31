@@ -14,6 +14,13 @@ if not openai_api_key:
 
 openai.api_key = openai_api_key
 
+# Set page configuration
+st.set_page_config(
+    page_title="Hot Girls Plan Meals",  # Title of the browser tab
+    page_icon="🍜",  # You can use an emoji or a local file path
+    layout="centered",  # Options: "centered" or "wide"
+    initial_sidebar_state="collapsed"  # Options: "expanded", "collapsed", "auto"
+)
 # Function to calculate macronutrients with OpenAI
 def calculate_macronutrients_with_ai(recipe_text):
     prompt = (
@@ -59,7 +66,7 @@ def generate_recipe_with_ai(cuisine, meal_type, calories, ingredients, protein_g
         return "Error generating recipe."
 
 # Streamlit UI
-st.title("🍭 Hot Girls Plan Meals")
+st.title("🍔🍟 Hot Girls Plan Meals")
 st.write("Generate recAIpes tailored to your preferences and calorie goals!")
 
 # Input fields
